@@ -1,0 +1,30 @@
+/* Responsive background positioning */
+.bg-responsive {
+  background-size: cover;
+  background-repeat: no-repeat;
+  overflow: hidden;
+}
+
+/* Default for mobile - focus on the right doorway as shown in the second image */
+@media (max-width: 1023px) {
+  .bg-responsive {
+    background-position: 89.3% center; /* Focused on right side doorway */
+    background-size: auto 100%; /* Ensures height fills container while maintaining aspect ratio */
+  }
+}
+
+/* For tablet screens */
+@media (min-width: 1024px) and (max-width: 1279px) {
+  .bg-responsive {
+    background-position: 89.3% center;
+    background-size: cover;
+  }
+}
+
+/* For larger screens - center the background */
+@media (min-width: 1280px) {
+  .bg-responsive {
+    background-position: center;
+    background-size: cover;
+  }
+}

@@ -1,0 +1,44 @@
+@import "tailwindcss";
+
+/* Define keyframes for animation */
+@keyframes frame-marquee {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+.animate-frame-marquee {
+  animation: frame-marquee 20s linear infinite;
+}
+
+@font-face {
+  font-family: 'Product Sans Black';
+  src: url('/fonts/ProductSans-Black(1).ttf') format('truetype');
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap;
+}
+
+
+.font-product-sans-black {
+  font-family: 'Product Sans Black', sans-serif;
+  font-weight: 900;
+}
+.font-rubik-mono-one {
+  font-family: 'Rubik Mono One', monospace;
+}
+
+.font-montserrat {
+  font-family: 'Montserrat', sans-serif;
+}
+
+.text-shadow {
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+
+
+
