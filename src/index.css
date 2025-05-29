@@ -1,14 +1,8 @@
+@config "../tailwind.config.js";
 @import "tailwindcss";
 
-/* Define keyframes for animation */
-@keyframes frame-marquee {
-  0% {
-    transform: translateX(0);
-  }
-  100% {
-    transform: translateX(-100%);
-  }
-}
+
+
 
 .animate-frame-marquee {
   animation: frame-marquee 20s linear infinite;
