@@ -51,8 +51,8 @@ const CountryPageLayout: React.FC<CountryPageLayoutProps> = ({
 
   return (
     <>
-      <Background2Clean />      
-        <Page2image
+      <Background2Clean />
+      <Page2image
         imageSrc={personImage}
         shadowSrc={shadowSrc}
         size="custom"

@@ -90,7 +90,8 @@ const TranslateButton: React.FC<TranslateButtonProps> = ({ text, onClick }) => {
     return () => {
       document.removeEventListener("mousedown", handleClickOutside);
     };
-  }, []);  return (
+  }, []);
+  return (
     <div ref={dropdownRef} className="relative hidden lg:block">
       {/* Expandable Button Container */}
       <div

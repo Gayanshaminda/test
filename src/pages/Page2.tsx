@@ -16,16 +16,14 @@ const Page2: React.FC = () => {
     <>
       <Background />
       <BottomRightText text={data.bottomRightText} centerOnMobile={true} />
-
       <TitleSubtitleContainer
         title={data.title}
         subtitle={data.subtitle}
         page={page}
         actionButtonText={data.actionButtonText}
-      />      <Cloud text={data.cloudText} />
-
+      />{" "}
+      <Cloud text={data.cloudText} />
       <Mainimage page={page} />
-
       <PeekingPerson imageSrc={trumpPeekingImage} altText="Trump" />
     </>
   );

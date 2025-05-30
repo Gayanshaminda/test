@@ -15,7 +15,6 @@ const Page7: React.FC = () => {
   return (
     <>
       <Background />
-
       <BottomRightText text={data.bottomRightText} centerOnMobile={true} />
       <TitleSubtitleContainer
         title={data.title}
@@ -23,10 +22,9 @@ const Page7: React.FC = () => {
         page={page}
         actionButtonText={data.actionButtonText}
         className="lg:ml-0"
-      />      <Cloud text={data.cloudText} />
-
+      />{" "}
+      <Cloud text={data.cloudText} />
       <Mainimage page={page} />
-
       <PeekingPerson imageSrc={trumpPeekingImage} altText="Trump" />
     </>
   );

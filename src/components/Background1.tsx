@@ -13,10 +13,7 @@ const Background: React.FC = () => {
   return (
     <>
       <div
-        className="fixed inset-0 h-screen w-screen overflow-hidden bg-cover bg-no-repeat
-                   max-lg:bg-[length:auto_100%] max-lg:bg-[position:89.3%_center]
-                   lg:max-xl:bg-cover lg:max-xl:bg-[position:89.3%_center]
-                   xl:bg-cover xl:bg-center"
+        className="fixed inset-0 h-screen w-screen overflow-hidden bg-cover bg-no-repeat max-lg:bg-[length:auto_100%] max-lg:bg-[position:89.3%_center] lg:max-xl:bg-cover lg:max-xl:bg-[position:89.3%_center] xl:bg-cover xl:bg-center"
         style={{ backgroundImage: `url(${backgroundImage})` }}
       />
 
