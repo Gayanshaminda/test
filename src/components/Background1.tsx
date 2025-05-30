@@ -7,14 +7,16 @@ import FrameImageRight from "./FrameImageRight";
 import Cloud from "./Cloud";
 import Copy from "./Copy";
 import Menu from "./Menu";
-import "./Background.css";
 
 const Background: React.FC = () => {
   const backgroundImage = new URL("../assets/BG.svg", import.meta.url).href;
   return (
     <>
       <div
-        className="bg-responsive fixed inset-0 h-screen w-screen overflow-hidden bg-cover bg-no-repeat"
+        className="fixed inset-0 h-screen w-screen overflow-hidden bg-cover bg-no-repeat
+                   max-lg:bg-[length:auto_100%] max-lg:bg-[position:89.3%_center]
+                   lg:max-xl:bg-cover lg:max-xl:bg-[position:89.3%_center]
+                   xl:bg-cover xl:bg-center"
         style={{ backgroundImage: `url(${backgroundImage})` }}
       />
 

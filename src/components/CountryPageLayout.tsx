@@ -3,10 +3,9 @@ import Totalsupply from "./Totalsupply";
 import Governancevotes from "./Governancevotes";
 import Burnevents from "./Burnevents";
 import Countryname from "./Countryname";
-import CenterPerson from "./CenterPerson";
+import Page2image from "./Page2image";
 import BackButton from "./Backbutton";
 import Background2Clean from "./Background2";
-import PersonShadow from "./PersonShadow";
 
 interface CountryData {
   name: string;
@@ -52,26 +51,16 @@ const CountryPageLayout: React.FC<CountryPageLayoutProps> = ({
 
   return (
     <>
-      <Background2Clean />
-      <CenterPerson
+      <Background2Clean />      
+        <Page2image
         imageSrc={personImage}
-        position="custom"
+        shadowSrc={shadowSrc}
         size="custom"
         width="w-[400px] sm:w-[420px] md:w-[450px] lg:w-[400px] xl:w-[470px] 2xl:w-[480px]"
-        height="h-[400px] sm:h-[420px] md:h-[450px] lg:h-[400px] xl:h-[470px] 2xl:h-[480px]"
+        height="h-[400px] sm:h-[420px] md:h-[450px] lg:w-[400px] xl:w-[470px] 2xl:w-[480px]"
         left="left-[100px] xs:left-[-50px] sm:left-[calc(50%-100px)] md:left-[calc(50%+0px)] lg:left-[calc(50%+90px)] xl:left-[calc(50%+120px)] 2xl:left-[calc(50%+138px)]"
-        className="z-30 -translate-x-1/4 transform sm:-translate-x-1/2 lg:mb-1 xl:-mb-3 2xl:-mb-4"
+        positionClasses="fixed bottom-0 left-[100px] xs:left-[-50px] sm:left-[calc(50%-100px)] md:left-[calc(50%+0px)] lg:left-[calc(50%+90px)] xl:left-[calc(50%+120px)] 2xl:left-[calc(50%+138px)] z-30 -translate-x-1/4 transform sm:-translate-x-1/2 lg:mb-1 xl:-mb-3 2xl:-mb-4"
       />
-
-      {shadowSrc && (
-        <PersonShadow
-          shadowSrc={shadowSrc}
-          width="w-[400px] sm:w-[420px] md:w-[450px] lg:w-[400px] xl:w-[470px] 2xl:w-[480px]"
-          height="h-[400px] sm:h-[420px] md:h-[450px] lg:h-[400px] xl:h-[470px] 2xl:h-[480px]"
-          left="left-[100px] xs:left-[-50px] sm:left-[calc(50%-100px)] md:left-[calc(50%+0px)] lg:left-[calc(50%+90px)] xl:left-[calc(50%+120px)] 2xl:left-[calc(50%+138px)]"
-          className="z-20 -translate-x-1/4 transform sm:-translate-x-1/2 lg:mb-1 xl:-mb-3 2xl:-mb-4"
-        />
-      )}
 
       {isLargeScreen ? (
         <div className="pointer-events-none absolute inset-0 z-40">

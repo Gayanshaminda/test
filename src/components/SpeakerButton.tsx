@@ -8,7 +8,7 @@ interface SpeakerButtonProps {
 const SpeakerButton: React.FC<SpeakerButtonProps> = ({ onClick }) => {
   return (
     <button
-      className="inline-flex h-4 w-5 items-center justify-center rounded-full border-2 border-pink-500 bg-gradient-to-r from-pink-800/60 via-pink-950/50 to-pink-800/60 shadow-md transition-all duration-200 sm:h-5 sm:w-6 md:h-6 md:w-8 lg:h-7 lg:w-9"
+      className="hidden lg:inline-flex h-4 w-5 items-center justify-center rounded-full border-2 border-pink-500 bg-gradient-to-r from-pink-800/60 via-pink-950/50 to-pink-800/60 shadow-md transition-all duration-200 sm:h-5 sm:w-6 md:h-6 md:w-8 lg:h-7 lg:w-9"
       onClick={onClick}
     >
       <img

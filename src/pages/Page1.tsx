@@ -1,11 +1,10 @@
 import React, { useState, useEffect } from "react";
 import Background from "../components/Background1";
-import CenterPerson from "../components/CenterPerson";
+import Mainimage from "../components/Mainimage";
 import PeekingPerson from "../components/PeekingPerson";
 import TitleSubtitleContainer from "../components/TitleSubtitleContainer";
 import Cloud from "../components/Cloud";
 import BottomRightText from "../components/BottomRightText";
-import putinImage from "../assets/putin.svg";
 import zelenskyImage from "../assets/zel-s-2.svg";
 import zelenskyLargeImage from "../assets/zel-s.svg";
 import { pageData } from "../data/pageData";
@@ -36,16 +35,10 @@ const Page1: React.FC = () => {
         subtitle={data.subtitle}
         page={page}
         actionButtonText={data.actionButtonText}
-      />
+      />      <Cloud text={data.cloudText} />
 
-      <Cloud text={data.cloudText} />
+      <Mainimage page={page} />
 
-      <CenterPerson
-        imageSrc={putinImage}
-        altText="Putin"
-        size="putin-preset"
-        position="putin-center"
-      />
       <PeekingPerson
         imageSrc={isLargeScreen ? zelenskyLargeImage : zelenskyImage}
         altText="Zelenskyy"

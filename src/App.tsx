@@ -25,7 +25,7 @@ const AppContent = () => {
 
   return (
     <>
-      <AutoPageTransition enabled={true} transitionDelay={5000} />
+      <AutoPageTransition enabled={true} transitionDelay={50000000} />
 
       <Routes>
         <Route path="/" element={<Navigate to="/page1" />} />

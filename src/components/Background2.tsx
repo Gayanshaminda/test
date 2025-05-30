@@ -5,7 +5,6 @@ import GroupImage from "./GroupImage";
 import Menu from "./Menu";
 import TranslateIconButton from "./Translateiconbutton";
 import Copy from "./Copy";
-import "./Background.css";
 
 const Background2Clean: React.FC = () => {
   const backgroundImage = new URL("../assets/BG.svg", import.meta.url).href;
@@ -13,7 +12,10 @@ const Background2Clean: React.FC = () => {
   return (
     <>
       <div
-        className="bg-responsive fixed inset-0 h-screen w-screen"
+        className="fixed inset-0 h-screen w-screen
+                   max-lg:bg-[length:auto_100%] max-lg:bg-[position:89.3%_center]
+                   lg:max-xl:bg-cover lg:max-xl:bg-[position:89.3%_center]
+                   xl:bg-cover xl:bg-center"
         style={{ backgroundImage: `url(${backgroundImage})` }}
       />
 

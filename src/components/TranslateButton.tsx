@@ -90,9 +90,8 @@ const TranslateButton: React.FC<TranslateButtonProps> = ({ text, onClick }) => {
     return () => {
       document.removeEventListener("mousedown", handleClickOutside);
     };
-  }, []);
-  return (
-    <div ref={dropdownRef} className="relative">
+  }, []);  return (
+    <div ref={dropdownRef} className="relative hidden lg:block">
       {/* Expandable Button Container */}
       <div
         className={`flex min-w-[100px] flex-col border-2 border-pink-500 bg-gradient-to-r from-pink-800/60 via-pink-950/50 to-pink-800/60 shadow-md transition-all duration-300 sm:min-w-[120px] md:min-w-[140px] lg:min-w-[160px] ${isHovered || isDropdownOpen ? "shadow-lg" : ""} ${
